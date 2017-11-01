@@ -1,4 +1,4 @@
-class ApartmentsController < ApplicationController
+class ApartmentsController < OpenReadController
   before_action :set_apartment, only: [:show, :update, :destroy]
 
   # GET /apartments
