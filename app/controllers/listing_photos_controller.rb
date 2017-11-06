@@ -3,7 +3,7 @@ class ListingPhotosController < ApplicationController
 
   # GET /listing_photos
   def index
-    @listing_photos = ListingPhoto.all
+    @listing_photos = ListingPhoto.where(apartment_id: params[:apartment_id])
 
     render json: @listing_photos
   end
